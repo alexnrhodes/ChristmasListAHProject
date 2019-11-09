@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		3829AA7323767B8000C34538 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3829AA7223767B8000C34538 /* AppDelegate.swift */; };
 		3829AA7523767B8000C34538 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3829AA7423767B8000C34538 /* SceneDelegate.swift */; };
-		3829AA7723767B8000C34538 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3829AA7623767B8000C34538 /* ViewController.swift */; };
 		3829AA7A23767B8000C34538 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3829AA7823767B8000C34538 /* Main.storyboard */; };
 		3829AA7C23767B8100C34538 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3829AA7B23767B8100C34538 /* Assets.xcassets */; };
 		3829AA7F23767B8100C34538 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3829AA7D23767B8100C34538 /* LaunchScreen.storyboard */; };
+		38C7377623774593005F1F1C /* Gift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C7377523774593005F1F1C /* Gift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3829AA6F23767B8000C34538 /* ChristmasListAHProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChristmasListAHProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3829AA7223767B8000C34538 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3829AA7423767B8000C34538 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3829AA7623767B8000C34538 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3829AA7923767B8000C34538 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3829AA7B23767B8100C34538 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3829AA7E23767B8100C34538 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3829AA8023767B8100C34538 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38C7377523774593005F1F1C /* Gift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,23 @@
 		3829AA7123767B8000C34538 /* ChristmasListAHProject */ = {
 			isa = PBXGroup;
 			children = (
-				3829AA7223767B8000C34538 /* AppDelegate.swift */,
-				3829AA7423767B8000C34538 /* SceneDelegate.swift */,
-				3829AA7623767B8000C34538 /* ViewController.swift */,
 				3829AA7823767B8000C34538 /* Main.storyboard */,
-				3829AA7B23767B8100C34538 /* Assets.xcassets */,
 				3829AA7D23767B8100C34538 /* LaunchScreen.storyboard */,
-				3829AA8023767B8100C34538 /* Info.plist */,
+				38C7377523774593005F1F1C /* Gift.swift */,
+				3829AA8623767C0600C34538 /* Resources */,
 			);
 			path = ChristmasListAHProject;
+			sourceTree = "<group>";
+		};
+		3829AA8623767C0600C34538 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3829AA7223767B8000C34538 /* AppDelegate.swift */,
+				3829AA7423767B8000C34538 /* SceneDelegate.swift */,
+				3829AA7B23767B8100C34538 /* Assets.xcassets */,
+				3829AA8023767B8100C34538 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3829AA7723767B8000C34538 /* ViewController.swift in Sources */,
+				38C7377623774593005F1F1C /* Gift.swift in Sources */,
 				3829AA7323767B8000C34538 /* AppDelegate.swift in Sources */,
 				3829AA7523767B8000C34538 /* SceneDelegate.swift in Sources */,
 			);
@@ -286,7 +294,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RCQFNX9QQ7;
-				INFOPLIST_FILE = ChristmasListAHProject/Info.plist;
+				INFOPLIST_FILE = ChristmasListAHProject/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +312,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RCQFNX9QQ7;
-				INFOPLIST_FILE = ChristmasListAHProject/Info.plist;
+				INFOPLIST_FILE = ChristmasListAHProject/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
