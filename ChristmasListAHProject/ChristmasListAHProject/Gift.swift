@@ -10,6 +10,8 @@ import Foundation
 import UIKit
 // Enums help to organize data
 
+// Enums are a stretch goal.
+
 enum Color: String {
     case black
     case white
@@ -29,11 +31,11 @@ enum Category: String {
 }
 
 struct Gift {
-    let image: UIImage?
+//    let image: UIImage?
     let giftName: String // UIAlert
     let price: Double // UIAlert
-    let link: String?
-    let color: String?
-    let category: String?
-    let details: String?
+    let link: String
+    let color: String
+    let category: String
+    let details: String
 }

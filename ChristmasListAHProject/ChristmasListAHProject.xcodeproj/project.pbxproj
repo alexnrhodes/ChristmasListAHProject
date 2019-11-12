@@ -15,6 +15,7 @@
 		38C7377623774593005F1F1C /* Gift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C7377523774593005F1F1C /* Gift.swift */; };
 		38C7377823774AFE005F1F1C /* WishListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C7377723774AFE005F1F1C /* WishListTableViewController.swift */; };
 		38C7377A23774B2B005F1F1C /* AddGiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C7377923774B2B005F1F1C /* AddGiftViewController.swift */; };
+		38C737A4237B5804005F1F1C /* SantasWorkshop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C737A3237B5803005F1F1C /* SantasWorkshop.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		38C7377523774593005F1F1C /* Gift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gift.swift; sourceTree = "<group>"; };
 		38C7377723774AFE005F1F1C /* WishListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListTableViewController.swift; sourceTree = "<group>"; };
 		38C7377923774B2B005F1F1C /* AddGiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGiftViewController.swift; sourceTree = "<group>"; };
+		38C737A3237B5803005F1F1C /* SantasWorkshop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SantasWorkshop.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				38C7377723774AFE005F1F1C /* WishListTableViewController.swift */,
 				38C7377923774B2B005F1F1C /* AddGiftViewController.swift */,
 				3829AA8623767C0600C34538 /* Resources */,
+				38C737A3237B5803005F1F1C /* SantasWorkshop.swift */,
 			);
 			path = ChristmasListAHProject;
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 			files = (
 				38C7377623774593005F1F1C /* Gift.swift in Sources */,
 				38C7377A23774B2B005F1F1C /* AddGiftViewController.swift in Sources */,
+				38C737A4237B5804005F1F1C /* SantasWorkshop.swift in Sources */,
 				3829AA7323767B8000C34538 /* AppDelegate.swift in Sources */,
 				38C7377823774AFE005F1F1C /* WishListTableViewController.swift in Sources */,
 				3829AA7523767B8000C34538 /* SceneDelegate.swift in Sources */,
