@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Christmas Wish-List-->
         <scene sceneID="PNR-9B-zz3">
             <objects>
-                <tableViewController id="SFy-kP-Dtc" sceneMemberID="viewController">
+                <tableViewController id="SFy-kP-Dtc" customClass="WishListTableViewController" customModule="ChristmasListAHProject" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="9ZE-3H-uTY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -49,7 +49,7 @@
                             <outlet property="delegate" destination="SFy-kP-Dtc" id="dAf-gn-iUP"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="qcE-So-2Gd">
+                    <navigationItem key="navigationItem" title="Christmas Wish-List" id="qcE-So-2Gd">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Dwc-Eu-SlT">
                             <connections>
                                 <segue destination="ASy-or-8l0" kind="show" identifier="AddGiftSegue" id="FuN-6O-WUe"/>
@@ -64,7 +64,7 @@
         <!--Add Gift-->
         <scene sceneID="mGl-E2-wxT">
             <objects>
-                <viewController id="ASy-or-8l0" sceneMemberID="viewController">
+                <viewController id="ASy-or-8l0" customClass="AddGiftViewController" customModule="ChristmasListAHProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bPe-a5-19C">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -154,16 +154,34 @@
                                     <constraint firstItem="3Bb-g1-8y6" firstAttribute="top" secondItem="dXw-Kf-Cjx" secondAttribute="top" id="w8q-eW-e8u"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ItK-bx-3UI">
+                                <rect key="frame" x="134.5" y="407" width="145" height="30"/>
+                                <state key="normal" title="Add Gift to Wish List!"/>
+                                <connections>
+                                    <action selector="addGiftbuttonTapped:" destination="ASy-or-8l0" eventType="touchUpInside" id="r1Q-ix-Qub"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="ccx-j2-kRa" firstAttribute="trailing" secondItem="dXw-Kf-Cjx" secondAttribute="trailing" constant="30" id="Eus-UM-dC7"/>
+                            <constraint firstItem="ItK-bx-3UI" firstAttribute="centerX" secondItem="bPe-a5-19C" secondAttribute="centerX" id="GI7-hN-9LT"/>
                             <constraint firstItem="dXw-Kf-Cjx" firstAttribute="top" secondItem="ccx-j2-kRa" secondAttribute="top" constant="30" id="kk0-mh-T8Q"/>
+                            <constraint firstItem="ItK-bx-3UI" firstAttribute="top" secondItem="dXw-Kf-Cjx" secondAttribute="bottom" constant="35" id="noK-8P-gjy"/>
                             <constraint firstItem="dXw-Kf-Cjx" firstAttribute="leading" secondItem="ccx-j2-kRa" secondAttribute="leading" constant="30" id="x91-F4-H5D"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ccx-j2-kRa"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add Gift" id="UgZ-zv-5dX"/>
+                    <connections>
+                        <outlet property="addGiftButton" destination="ItK-bx-3UI" id="NVW-RM-0Qq"/>
+                        <outlet property="categoryTextField" destination="FNo-6J-rzT" id="3rg-na-WSB"/>
+                        <outlet property="colorTextField" destination="jLo-8e-DfP" id="4ax-QY-SVt"/>
+                        <outlet property="detailsTextField" destination="5xG-8N-vhO" id="e4q-ND-q4c"/>
+                        <outlet property="giftNameTextField" destination="bZW-H8-5pE" id="Wo9-1u-vR4"/>
+                        <outlet property="linkTextField" destination="aCz-Zg-E3Q" id="3LM-Qi-ct2"/>
+                        <outlet property="priceTextField" destination="Jqy-b9-FGv" id="dGY-qN-HpJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cSN-4F-mWb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

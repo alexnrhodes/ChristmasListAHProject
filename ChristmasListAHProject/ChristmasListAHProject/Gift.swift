@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import UIKit
 // Enums help to organize data
 
 enum Color: String {
@@ -29,10 +29,11 @@ enum Category: String {
 }
 
 struct Gift {
-    let giftName: String
-    let price: Double
+    let image: UIImage?
+    let giftName: String // UIAlert
+    let price: Double // UIAlert
     let link: String?
-    let color: Color?
-    let category: Category?
+    let color: String?
+    let category: String?
     let details: String?
 }
