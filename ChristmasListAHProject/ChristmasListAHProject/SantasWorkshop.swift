@@ -11,7 +11,7 @@ import Foundation
 
 class SantasWorkshop {
     
-    var gifts: [Gift] = [] // storing gifts here to show them more about how all of the files communicate.
+    var giftBag: [Gift] = [] // storing gifts here to show them more about how all of the files communicate.
     
     
     // using create to get them familiar with CRUD without actually telling them about CRUD
@@ -19,6 +19,6 @@ class SantasWorkshop {
         
         let gift = Gift(giftName: giftName, price: price, link: link, color: color, category: category, details: details)
         
-        gifts.append(gift)
+        giftBag.append(gift)
     }
 }
