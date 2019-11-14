@@ -22,7 +22,7 @@ class GiftDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        updateViews()
     }
 
     private func updateViews() {

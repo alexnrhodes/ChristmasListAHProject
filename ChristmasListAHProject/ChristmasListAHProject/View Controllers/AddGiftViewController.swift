@@ -34,5 +34,6 @@ class AddGiftViewController: UIViewController {
         
         workshop.createGift(giftName: name, price: Double(price), link: link, color: color, category: category, details: details)
         
+        navigationController?.popViewController(animated: true)
     }
 }
