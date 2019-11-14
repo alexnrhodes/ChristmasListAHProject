@@ -20,13 +20,19 @@ class AddGiftViewController: UIViewController {
     
     var santasWorshop: SantasWorkshop?
     var gift: Gift?
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
     
     @IBAction func addGiftbuttonTapped(_ sender: UIButton) {
+        
+        guard let workshop = santasWorshop,
+            let name = giftNameTextField.text,
+            let priceText = priceTextField.text,
+            let link = linkTextField.text,
+            let color = colorTextField.text,
+            let category = categoryTextField.text,
+            let details = detailsTextField.text,
+            let price = Double(priceText) else {return}
+        
+        workshop.createGift(giftName: name, price: Double(price), link: link, color: color, category: category, details: details)
+        
     }
 }
