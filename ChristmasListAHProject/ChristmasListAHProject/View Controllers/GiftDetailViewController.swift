@@ -16,6 +16,9 @@ class GiftDetailViewController: UIViewController {
        @IBOutlet weak var colorLabel: UILabel!
        @IBOutlet weak var categoryLabel: UILabel!
        @IBOutlet weak var detailsLabel: UILabel!
+    
+    var santasWorkshop: SantasWorkshop?
+    var gift: Gift?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +26,14 @@ class GiftDetailViewController: UIViewController {
     }
 
     private func updateViews() {
+        guard let gift = gift else {return}
         
+        giftNameLabel.text = gift.giftName
+        priceLabel.text = String(gift.price)
+        linkLabel.text = gift.link
+        colorLabel.text = gift.color
+        categoryLabel.text = gift.category
+        detailsLabel.text = gift.details
+    
     }
 }

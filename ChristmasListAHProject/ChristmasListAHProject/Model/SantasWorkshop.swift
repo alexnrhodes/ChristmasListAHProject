@@ -8,7 +8,7 @@
 
 import Foundation
 
-
+// This is a cusotm class, we use custom classes to create methods and properties that specifically relate to an object in use.
 class SantasWorkshop {
     
     var giftBag: [Gift] = [] // storing gifts here to show them more about how all of the files communicate.

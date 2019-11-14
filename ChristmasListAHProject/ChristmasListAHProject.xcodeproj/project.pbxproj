@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		381D54DB237DC8BD00313327 /* GiftDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381D54DA237DC8BD00313327 /* GiftDetailViewController.swift */; };
 		3829AA7323767B8000C34538 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3829AA7223767B8000C34538 /* AppDelegate.swift */; };
 		3829AA7523767B8000C34538 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3829AA7423767B8000C34538 /* SceneDelegate.swift */; };
 		3829AA7A23767B8000C34538 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3829AA7823767B8000C34538 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		381D54DA237DC8BD00313327 /* GiftDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftDetailViewController.swift; sourceTree = "<group>"; };
 		3829AA6F23767B8000C34538 /* ChristmasListAHProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChristmasListAHProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3829AA7223767B8000C34538 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3829AA7423767B8000C34538 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +45,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		381D54DC237DC9B200313327 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				38C7377723774AFE005F1F1C /* WishListTableViewController.swift */,
+				38C7377923774B2B005F1F1C /* AddGiftViewController.swift */,
+				381D54DA237DC8BD00313327 /* GiftDetailViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		381D54DD237DC9C800313327 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3829AA7823767B8000C34538 /* Main.storyboard */,
+				3829AA7D23767B8100C34538 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		381D54DE237DC9DC00313327 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				38C7377523774593005F1F1C /* Gift.swift */,
+				38C737A3237B5803005F1F1C /* SantasWorkshop.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		3829AA6623767B8000C34538 = {
 			isa = PBXGroup;
 			children = (
@@ -62,13 +92,10 @@
 		3829AA7123767B8000C34538 /* ChristmasListAHProject */ = {
 			isa = PBXGroup;
 			children = (
-				3829AA7823767B8000C34538 /* Main.storyboard */,
-				3829AA7D23767B8100C34538 /* LaunchScreen.storyboard */,
-				38C7377523774593005F1F1C /* Gift.swift */,
-				38C7377723774AFE005F1F1C /* WishListTableViewController.swift */,
-				38C7377923774B2B005F1F1C /* AddGiftViewController.swift */,
+				381D54DE237DC9DC00313327 /* Model */,
+				381D54DC237DC9B200313327 /* View Controllers */,
+				381D54DD237DC9C800313327 /* Storyboards */,
 				3829AA8623767C0600C34538 /* Resources */,
-				38C737A3237B5803005F1F1C /* SantasWorkshop.swift */,
 			);
 			path = ChristmasListAHProject;
 			sourceTree = "<group>";
@@ -157,6 +184,7 @@
 			files = (
 				38C7377623774593005F1F1C /* Gift.swift in Sources */,
 				38C7377A23774B2B005F1F1C /* AddGiftViewController.swift in Sources */,
+				381D54DB237DC8BD00313327 /* GiftDetailViewController.swift in Sources */,
 				38C737A4237B5804005F1F1C /* SantasWorkshop.swift in Sources */,
 				3829AA7323767B8000C34538 /* AppDelegate.swift in Sources */,
 				38C7377823774AFE005F1F1C /* WishListTableViewController.swift in Sources */,
