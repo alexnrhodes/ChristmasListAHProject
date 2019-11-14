@@ -18,6 +18,8 @@ class AddGiftViewController: UIViewController {
     @IBOutlet weak var detailsTextField: UITextField!
     @IBOutlet weak var addGiftButton: UIButton!
     
+    var santasWorshop: SantasWorkshop?
+    var gift: Gift?
 
     override func viewDidLoad() {
         super.viewDidLoad()
